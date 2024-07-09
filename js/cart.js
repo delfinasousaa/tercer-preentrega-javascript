@@ -1,3 +1,5 @@
+// cart.js
+
 const contenedorTarjetas = document.getElementById("palos-container");
 const unidadesElement = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");
@@ -13,15 +15,14 @@ function crearTarjetasProductosInicio(palos) {
     });
 
     actualizarTotales(); 
-    actualizarEstadoCarrito(); // Añadido para actualizar el estado del carrito al crear las tarjetas
+    actualizarEstadoCarrito(); 
 }
 
 function crearTarjetaProducto(palo) {
     const tarjetaProducto = document.createElement("div");
     tarjetaProducto.classList.add("tarjeta-producto");
 
-    // Contenido de la tarjeta de producto
-    tarjetaProducto.innerHTML = 
+    tarjetaProducto.innerHTML = `
         <div class="image">
             <img src="${palo.img}" alt="palo ${palo.nombre}">
         </div>
@@ -34,7 +35,7 @@ function crearTarjetaProducto(palo) {
                 <button class="sumar" data-id="${palo.id}">+</button>
             </div>
         </div>
-    ;
+    `;
 
     tarjetaProducto.querySelector(".restar").addEventListener("click", () => {
         restarAlCarrito(palo);
@@ -58,19 +59,19 @@ function actualizarTotales() {
     });
 
     unidadesElement.innerText = unidades;
-    precioElement.innerText = €${precio} EUR;
+    precioElement.innerText = `€${precio} EUR`;
 }
 
 function actualizarEstadoCarrito() {
     const productos = JSON.parse(localStorage.getItem("palos")) || [];
 
     if (productos.length === 0) {
-        carritoVacioElement.style.display = 'block'; // Muestra el mensaje de carrito vacío
+        carritoVacioElement.style.display = 'block'; 
     } else {
-        carritoVacioElement.style.display = 'none'; // Oculta el mensaje de carrito vacío
+        carritoVacioElement.style.display = 'none'; 
     }
 
-    // Actualiza las unidades y precios totales
+   
     let unidades = 0;
     let precio = 0;
 
@@ -80,13 +81,13 @@ function actualizarEstadoCarrito() {
     });
 
     unidadesElement.innerText = unidades;
-    precioElement.innerText = €${precio} EUR;
+    precioElement.innerText = `€${precio} EUR`;
 }
 
 reiniciarCarritoElement.addEventListener("click", () => {
     localStorage.removeItem("palos");
     crearTarjetasProductosInicio([]);
-    actualizarEstadoCarrito(); // Añadido para actualizar el estado del carrito al reiniciar
+    actualizarEstadoCarrito(); 
 });
 
 function agregarAlCarrito(palo) {
@@ -99,7 +100,7 @@ function agregarAlCarrito(palo) {
 
     localStorage.setItem("palos", JSON.stringify(productos));
     crearTarjetasProductosInicio(productos);
-    actualizarEstadoCarrito(); // Añadido para actualizar el estado del carrito al agregar producto
+    actualizarEstadoCarrito(); 
 }
 
 function restarAlCarrito(palo) {
@@ -116,7 +117,7 @@ function restarAlCarrito(palo) {
 
     localStorage.setItem("palos", JSON.stringify(productos));
     crearTarjetasProductosInicio(productos);
-    actualizarEstadoCarrito(); // Añadido para actualizar el estado del carrito al restar producto
+    actualizarEstadoCarrito(); 
 }
 
 document.addEventListener("DOMContentLoaded", () => {
