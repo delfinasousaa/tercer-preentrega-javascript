@@ -1,0 +1,26 @@
+#palos-container {    
+    background-color: #ffffff; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    row-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.tarjeta-palos {
+    transition: 200ms;
+}
+
+.tarjeta-palos:hover {
+    translate: 0 -10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.233);
+}
+
+
+.tarjeta-palos img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.397));
+}
+

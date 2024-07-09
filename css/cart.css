@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0; 
+    position: fixed;
+    top: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; 
+    padding: 20px;
+    width: 100%;
+}
+
+.tarjeta-producto {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 400px;
+    height: 150px;
+}
+
+#p-cart {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+#palos-container h2 {
+    color: #000000; 
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+#palos-container button {
+    background-color:  #00ff62;
+    width: 30px;
+    border-radius: 30%;
+    color: #000000; 
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#palos-container p {
+    color: #464646;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.image {
+    background-color: rgb(255, 255, 255);
+}
+
+.tarjeta-producto img {
+    width: 100px;
+    margin-right: 10px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.116));
+}
+
+.tarjeta-producto .content {
+    flex: 1;
+}
+
+#totales {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+#totales button {
+    background-color:  #000000;
+    width: 200px;
+    border-radius: 25px;
+    color: #ffffff; 
+    font-size: 18px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+

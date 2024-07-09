@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon/favicon.ico">
+     <!--link googlefont-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Osaka</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="contenedor-logo" href="index.html"> <img class="logo-img" src="../images/favicon/favicon.ico" alt="logo de osaka">
+          </a>
+          <button class="navbar-toggler d-lg-none" id="toggler-alineacion-hamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-white d-lg-flex justify-content-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto flex-grow-1 ps-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/palos.html">Palos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-section">
+            <h1 class="hero-title">¿Estás listo para la nueva temporada de Osaka?</h1>
+            <h2 class="hero-subtitle">s24</h2>
+        </div>
+        <video muted autoplay loop src="video/OSAKAS23VIDEO.mp4" type="video/mp4"></video>
+        <div class="capa"></div>
+    </section>
+
+    <main>
+      <div class="main-container">
+        <div class="line line-left"></div>
+        <h2 class="title-main">La tienda de hockey N1 en el mundo</h2>
+        <div class="line line-right"></div>
+      <div class="grid-container">
+          <div class="grid-item"> 
+              <img class="img-grid" src="images/extra/img1.jpeg" alt="imagen de un jugador de hockey jugando">
+          </div>
+          <div class="grid-item">
+              <div class="image-container">
+                  <span class="span-container" href="pages/productos.html">Comprar ahora</span>
+                  <img class="img-grid" src="images/extra/img2.jpeg" alt="imagen de una chica atándose los cordones">
+              </div>
+          </div>
+          <div class="grid-item"> 
+              <img class="img-grid" src="images/extra/img3.jpeg" alt="imagen de un chico jugando al hockey">
+          </div>
+      </div>
+
+      <section class="section-slider">
+        <div class="container-slider">
+        <div class="scroller">
+          <p class="item-slider">¡15% off llevando 3 o más productos!</p>
+        </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-container">
+          <div class="section-slide">
+            <img class="section-img" src="images/extra/slide1.png" alt="">
+            <p class="slide-p">envíos gratis desde los $60.000</p>
+          </div>
+          <div class="section-slide">
+            <img class="section-img" src="images/extra/slide2.png" alt="">
+            <p class="slide-p">6 cuotas sin interes</p>
+          </div>
+          <div class="section-slide">
+            <img class="section-img" src="images/extra/slide3.png" alt="">
+            <p class="slide-p">compra 100% segura</p>
+          </div>
+      </section>
+
+      <div class="second-container">
+        <h2 class="secondG-title">Osaka players: sus modelos favoritos</h2>
+        <div class="second-Gcontainer">
+            <div class="second-Gitem">
+                <div class="img-container">
+                    <img class="second-Gimg" src="images/extra/img4.jpeg" alt="imagen de un jugador de hockey">
+                    <div class="text-overlay">
+                        <div class="text-content">
+                            <p class="secondG-p">Arthur Van Doren | <br> 29 años</p>
+                            <img class="bandera" src="images/extra/bel.png" alt="bandera de bélgica">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-Gitem">
+                <div class="img-container">
+                    <img class="second-Gimg" src="images/extra/img7.jpeg" alt="imagen de un jugador de hockey">
+                    <div class="text-overlay">
+                        <div class="text-content">
+                            <p class="secondG-p">Viktor Lockwood | <br> 32 años</p>
+                            <img class="bandera" src="images/extra/fr.png" alt="bandera de francia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-Gitem">
+                <div class="img-container">
+                    <img class="second-Gimg" src="images/extra/img5.jpeg" alt="imagen de un jugador de hockey">
+                    <div class="text-overlay">
+                        <div class="text-content">
+                            <p class="secondG-p">Olivia Bent-Cole | <br> 18 años</p>
+                            <img class="bandera" src="images/extra/usa.png" alt="bandera de estados unidos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-Gitem">
+                <div class="img-container">
+                    <img class="second-Gimg" src="images/extra/img6.jpeg" alt="imagen de un jugador de hockey">
+                    <div class="text-overlay">
+                        <div class="text-content">
+                            <p class="secondG-p">Ross Gilham-Jones | <br> 34 años</p>
+                            <img class="bandera" src="images/extra/gb.png" alt="bandera de gran bretaña">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-RxpgxKK9SqMC5UcSt1QhtlVu4jwDq5YI4v91Tsmj5mYYjO8hA9PjJxn0l9pzH1cB" crossorigin="anonymous"></script>
+    <script src="../js/cartService.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
