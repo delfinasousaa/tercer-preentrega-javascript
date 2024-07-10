@@ -1,5 +1,3 @@
-// cart.js
-
 const contenedorTarjetas = document.getElementById("palos-container");
 const unidadesElement = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");

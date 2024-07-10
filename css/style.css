@@ -1,8 +1,27 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #000000; 
+    color: #fff;
+    padding: 10px 0; 
+    text-align: center;
+    width: 100%;
 }
 
 .hero {
@@ -28,7 +47,6 @@
     text-shadow: rgb(0, 0, 0) 0px 0px 10px;
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -219,7 +237,7 @@ video {
 
 .second-container {
     margin-top: 25px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .second-Gcontainer {
@@ -233,8 +251,8 @@ video {
 
 .secondG-title {
     font-size: 25px;
-    color: #ffffff;
-    text-shadow: 0 0 10px #000000be;
+    color: #000000;
+    text-shadow: 0 0 10px #0000007c;
     margin-bottom: 20px; 
     text-transform: uppercase; 
     text-align: center; 
@@ -247,6 +265,9 @@ video {
     flex-basis: calc(25% - 20px);
     max-width: calc(25% - 20px);
     margin-bottom: 20px;
+    box-shadow: #00000057 0px 0px 10px;
+    border-top-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
 }
 
 .img-container {
@@ -521,12 +542,6 @@ video {
     right: -38px;
 }
 
-
-
-
-
-/*CSS PALOS*/
-
 .section-sticks_container {
     position: relative;
     display: block; 
@@ -575,7 +590,6 @@ video {
       background-position: 400%;
     }
   }
-
   
   .grid-container {
     display: grid;
@@ -585,7 +599,6 @@ video {
     justify-items: center;
   }
 
-    
   .desc {
     margin-top: 0.5rem;
     color: #ff0000;
@@ -693,4 +706,3 @@ video {
     color: #00FF7F;
     margin-top: 5px; 
 }
-
